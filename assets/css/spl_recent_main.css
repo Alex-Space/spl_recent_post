@@ -1,0 +1,63 @@
+.spl-recent-posts {
+  text-align: center;
+} 
+
+.spl-recent-plugin-link {
+  display: inline-block;
+  margin: 10px 5px;
+  border-bottom: none !important;
+  position: relative;
+}
+.spl-recent-plugin-link img {
+  display: block;
+  border: 4px solid #ccc;
+}
+.spl-recent-plugin-link:hover img {
+  border: 4px solid #000;
+  
+}
+.spl-recent-tool-box {
+  background-color: #ccc;
+    margin: auto;
+    position: absolute;
+    left: -50%;
+    right: 0;
+    top: 100px;
+    width: 200px;
+    z-index: 1;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 10px;
+    opacity: 0;
+    display: none;
+    z-index: 0;
+    color: #000;
+    border: 3px solid #2C2C2C;
+}
+.spl-recent-tool-box:before {
+  content: '';
+  display: block;
+  border-bottom: 5px solid #000000;
+  border-right: 50px solid transparent;
+  width: 49px;
+  position: absolute;
+  right: 0;
+  top: -7px;
+  
+}
+.spl-recent-tool-box:after {
+  content: '';
+  display: block;
+  border-bottom: 5px solid #000000;
+  border-left: 50px solid transparent;
+  width: 49px;
+  position: absolute;
+  left: 0;
+  top: -7px;
+  
+}
+.spl-recent-plugin-link:hover .spl-recent-tool-box {
+  z-index: 2;
+  opacity: 1;
+  display: block;
+}
